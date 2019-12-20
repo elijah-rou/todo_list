@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './views/Home.vue'
 
-import App from './App.vue'
-import Home from './components/views/Home.vue'
+Vue.use(Router)
 
 export default new Router({
     routes: [
@@ -13,10 +13,3 @@ export default new Router({
         }
     ]
 })
-
-new Vue({
-  render: h => h(App),
-  router: Router
-}).$mount('#app')
-
-//Vue.use(Router)
